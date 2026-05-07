@@ -1,8 +1,8 @@
 import { Project, Skill, TimelineItem } from './types';
 
 export const SOCIAL_LINKS = {
-  linkedin: 'https://www.linkedin.com/in/junha-park/',
-  github: 'https://github.com/junha7710',
+  linkedin: 'https://www.linkedin.com/in/junha-park-04798b400/',
+  github: 'https://github.com/jpar483',
   email: 'mailto:junha7710@gmail.com',
   portfolio: '#',
 };
@@ -15,7 +15,7 @@ export const PROJECTS: Project[] = [
     description: 'Interactive embedded robot featuring servo control, AI-driven face and speech detection, and custom 3D printed components.',
     image: 'https://images.unsplash.com/photo-1546776310-eef45dd6d63c?q=80&w=2000&auto=format&fit=crop',
     category: 'robotics',
-    tags: ['Embedded', 'AI', 'CV'],
+    tags: ['Embedded Systems', 'AI'],
     link: 'https://github.com/tyor819/ECSE-design-comp'
   },
   {
@@ -64,8 +64,8 @@ export const PHILOSOPHY = [
 ];
 
 export const SKILLS: Skill[] = [
-  { name: 'Microcontroller Programming', level: 'Advanced', percentage: 95 },
-  { name: 'LLM / Prompt Design', level: 'Advanced', percentage: 92 },
+  { name: 'Microcontroller Programming', level: 'Advanced', percentage: 90 },
+  { name: 'LLM / Prompt Design', level: 'Proficient', percentage: 85 },
   { name: 'PCB Design & Simulation', level: 'Proficient', percentage: 88 },
   { name: 'Machine Learning', level: 'Proficient', percentage: 85 },
   { name: 'Mechanical Fabrication', level: 'Proficient', percentage: 82 },
@@ -96,7 +96,7 @@ export const TIMELINE: TimelineItem[] = [
     title: 'Calculus and Physics Tutoring',
     subtitle: 'NCEA Level 1 Academic Support',
     date: '2023 — 2024',
-    description: 'Provided specialized academic mentorship for NCEA Level 1 students. Developed tailored lesson plans for complex STEM concepts.',
+    description: 'Provided specialized academic mentorship for NCEA Level 1 students.',
     type: 'work'
   },
   {
@@ -106,6 +106,6 @@ export const TIMELINE: TimelineItem[] = [
     date: 'CONTINUOUS',
     description: 'Precision machining including Lathe work, milling, and drilling. Metal fabrication involving MIG welding and high-precision cutting.',
     type: 'project',
-    tags: ['Machining', 'Welding']
+    tags: ['Machining', 'Welding', '3D Printing']
   }
 ];
