@@ -1,0 +1,72 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Newsreader:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Newsreader", ui-serif, Georgia, serif;
+
+  --color-background: #0a0a0a;
+  --color-surface-dim: #131313;
+  --color-surface: #111827;
+  --color-surface-bright: #1e293b;
+  
+  --color-primary: #3b82f6;
+  --color-on-primary: #ffffff;
+  
+  --color-secondary: #94a3b8;
+  --color-on-surface: #e5e2e1;
+  --color-on-surface-variant: #c2c6d6;
+  
+  --color-border-subtle: rgba(255, 255, 255, 0.1);
+  --color-border-muted: rgba(148, 163, 184, 0.2);
+
+  --spacing-container-max: 1280px;
+  --spacing-section-gap: 160px;
+  --spacing-stack-gap: 32px;
+  --spacing-margin-page: 64px;
+
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+/* Custom Utilities */
+.glass {
+  @apply bg-surface/80 backdrop-blur-xl border border-border-subtle;
+}
+
+.editorial-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--spacing-gutter);
+}
+
+.text-display-xl {
+  @apply text-7xl font-bold leading-[1.1] tracking-[-0.04em];
+}
+
+.text-headline-lg {
+  @apply text-5xl font-semibold leading-[1.2] tracking-[-0.02em];
+}
+
+.text-headline-md {
+  @apply text-3xl font-semibold leading-normal;
+}
+
+.text-nav-link {
+  @apply text-lg font-semibold tracking-[0.05em];
+}
+
+.text-label-sm {
+  @apply text-xs font-bold uppercase tracking-[0.1em];
+}
+
