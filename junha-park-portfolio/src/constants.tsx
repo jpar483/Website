@@ -16,7 +16,7 @@ export const PROJECTS: Project[] = [
     image: 'https://images.unsplash.com/photo-1546776310-eef45dd6d63c?q=80&w=2000&auto=format&fit=crop',
     category: 'robotics',
     tags: ['Embedded', 'AI', 'CV'],
-    link: 'https://github.com/junha7710/winnie-the-boht'
+    link: 'https://github.com/tyor819/ECSE-design-comp'
   },
   {
     id: 'smart-energy-monitor',
@@ -26,7 +26,7 @@ export const PROJECTS: Project[] = [
     image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2000&auto=format&fit=crop',
     category: 'embedded',
     tags: ['PCB Design', 'Atmega', 'C'],
-    link: '#'
+    link: 'https://github.com/uoa-ece209-2025/ec209-2025-project-2025_team_41'
   },
   {
     id: 'roastworks-dashboards',
@@ -36,7 +36,7 @@ export const PROJECTS: Project[] = [
     image: 'https://images.unsplash.com/photo-1551288049-bbbda536339a?q=80&w=2000&auto=format&fit=crop',
     category: 'software',
     tags: ['Python', 'PyQt6', 'AI'],
-    link: '#'
+    link: 'https://github.com/COMPSYS302/project-python-team-4'
   },
   {
     id: 'java-navigation',
@@ -46,7 +46,7 @@ export const PROJECTS: Project[] = [
     image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2000&auto=format&fit=crop',
     category: 'software',
     tags: ['Java', 'Android', 'Algorithms'],
-    link: '#'
+    link: 'https://github.com/COMPSYS302/2026_Project_Java_Team_13'
   }
 ];
 
