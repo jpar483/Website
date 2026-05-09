@@ -80,10 +80,10 @@
   function WinnieDetail() {
     const project = winnieData;
     const phase1Images = useRef([
-  "/Photos/winnie/Initial_Design1.jpg",
-  "/Photos/winnie/Initial_Design2.jpg",
-  "/Photos/winnie/Initial_Design3.jpg",
-  "/Photos/winnie/Initial_Design4.jpg",
+  "/Photos/Initial_Design1.jpg",
+  "/Photos/Initial_Design2.jpg",
+  "/Photos/Initial_Design3.jpg",
+  "/Photos/Initial_Design4.jpg",
 ]).current;
 
 const [imgIndex, setImgIndex] = useState(0);
