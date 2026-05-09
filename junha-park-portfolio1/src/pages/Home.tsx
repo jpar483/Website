@@ -37,12 +37,12 @@ export default function Home() {
             transition={{ delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-6 items-center"
           >
-            <Link 
+            {/* <Link 
               to="/contact" 
               className="px-10 py-4 bg-primary text-on-primary font-bold rounded hover:brightness-110 transition-all shadow-xl shadow-primary/10 uppercase tracking-widest text-sm"
             >
               Get in Touch
-            </Link>
+            </Link> */}
             <Link 
               to="/portfolio" 
               className="text-xs font-bold text-primary flex items-center gap-2 hover:translate-x-1 transition-transform group uppercase tracking-[0.2em]"
@@ -90,16 +90,16 @@ export default function Home() {
             <div className="absolute left-[-5px] top-2 w-3 h-3 rounded-full border-2 border-outline-variant bg-background"></div>
             <div className="grid grid-cols-12 gap-8">
               <div className="col-span-12 md:col-span-3">
-                <span className="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">CORE PROJECT</span>
+                <span className="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">2025</span>
                 <h4 className="text-sm font-bold text-primary mt-1">Hardware-Software Integration</h4>
               </div>
               <div className="col-span-12 md:col-span-9">
-                <h3 className="text-xl font-bold text-on-surface mb-4">Embedded Systems & AI Project Lead</h3>
+                <h3 className="text-xl font-bold text-on-surface mb-4">Embedded Systems Project</h3>
                 <p className="text-sm text-on-surface-variant mb-6 leading-relaxed">
-                  Led the design and fabrication of custom PCBs for embedded applications. Integrated machine learning modules into microcontrollers to process real-time sensor data, achieving high precision in mechanical control systems.
+                  Designed and fabricated a custom PCB for embedded applications. Integrated C programming into microcontrollers: AtMega328p to process real-time energy data.
                 </p>
                 <div className="flex flex-wrap gap-3">
-                  {['PCB Design', 'Machine Learning', 'Mechanical Fabrication'].map(tag => (
+                  {['PCB Design', 'Embedded Systems', 'Mechanical Fabrication'].map(tag => (
                     <span key={tag} className="bg-surface-container/50 px-3 py-1 text-[10px] font-bold text-on-surface rounded border border-outline-variant/30 uppercase tracking-widest">
                       {tag}
                     </span>
