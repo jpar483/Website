@@ -32,13 +32,13 @@ export default function Experience() {
                   <span className="text-sm font-semibold text-on-surface">3rd Place — ECSE Design Competition 2025</span>
                 </div>
               </div>
-              <div className="flex items-start gap-5">
+              {/* <div className="flex items-start gap-5">
                 <Construction size={20} className="text-primary mt-1" />
                 <div>
                   <span className="text-[10px] text-outline uppercase tracking-widest block mb-1 font-bold">Technical Skills</span>
                   <span className="text-sm font-semibold text-on-surface">Manufacturing & Fabrication</span>
                 </div>
-              </div>
+              </div> */}
               <div className="flex items-start gap-5">
                 <GraduationCap size={20} className="text-primary mt-1" />
                 <div>
@@ -95,7 +95,7 @@ export default function Experience() {
                   <div className="text-lg text-primary mt-1 font-medium">3rd Place Finish</div>
                 </div>
                 <p className="text-sm text-on-surface-variant max-w-2xl leading-relaxed">
-                  Recognized for excellence in electrical and computer systems engineering design. Led technical development of a prototype system demonstrating innovative problem-solving and robust technical execution under competitive pressure.
+                  Was part of team that developed an interactive Chatbot, with AI integration, mechanical movement, user recognition and many more. Created through combination of electrical and software engineering from embedded systems to programming.
                 </p>
               </div>
 
@@ -105,10 +105,10 @@ export default function Experience() {
                 <div className="mb-4">
                   <span className="text-[10px] font-bold text-outline uppercase tracking-widest block mb-4">2023 — 2024</span>
                   <h3 className="text-2xl font-bold text-white leading-tight">Calculus and Physics Tutoring</h3>
-                  <div className="text-xs text-on-surface-variant mt-1 font-bold uppercase tracking-wide">NCEA Level 1 Academic Support</div>
+                  <div className="text-xs text-on-surface-variant mt-1 font-bold uppercase tracking-wide">NCEA Level 1 Academic Support 2023 - 2024</div>
                 </div>
                 <p className="text-sm text-on-surface-variant max-w-2xl leading-relaxed">
-                  Provided specialized academic mentorship for NCEA students. Developed custom pedagogical frameworks for complex STEM concepts, leading to significant measurable improvements in conceptual understanding and exam performance.
+                  Provided specialized academic mentorship for NCEA level 1 students mainly targeted at calculus and physics.
                 </p>
               </div>
 
@@ -116,7 +116,7 @@ export default function Experience() {
               <div className="relative group">
                 <div className="absolute -left-[3.1rem] top-1.5 w-3 h-3 rounded-full border border-outline bg-background group-hover:border-primary transition-colors duration-300"></div>
                 <div className="mb-4">
-                  <span className="text-[10px] font-bold text-outline uppercase tracking-widest block mb-4">Continuous</span>
+                  <span className="text-[10px] font-bold text-outline uppercase tracking-widest block mb-4">2021 - Present</span>
                   <h3 className="text-2xl font-bold text-white">Manufacturing & Iterative Design</h3>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8">
