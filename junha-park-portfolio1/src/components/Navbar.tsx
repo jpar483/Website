@@ -49,7 +49,7 @@ export default function Navbar() {
             <Moon size={20} />
           </button>
           <a
-            href="/Junha_Park_CV.pdf"
+            href="/Junha Park CV.pdf"
             download
             className="px-6 py-2.5 bg-primary-container text-on-primary-container text-xs font-bold rounded hover:brightness-110 transition-all shadow-lg shadow-primary-container/20 flex items-center gap-2 uppercase tracking-widest"
           >
