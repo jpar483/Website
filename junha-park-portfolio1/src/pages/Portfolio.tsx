@@ -17,7 +17,7 @@ const projects = [
     title: 'Winnie the Boht',
     date: 'AUG 2025',
     description: 'Interactive embedded robot featuring servo control, AI-driven face and speech detection, and custom 3D printed components.',
-    image: 'IMG_0698.jpg',
+    image: '/Photos/IMG_0698.jpg',
     size: 'large',
     githubUrl: 'https://github.com/jpar483'
   },

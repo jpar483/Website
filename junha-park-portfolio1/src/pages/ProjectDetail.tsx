@@ -80,10 +80,10 @@
   function WinnieDetail() {
     const project = winnieData;
     const phase1Images = useRef([
-  "/Initial_Design1.jpg",
-  "/Initial_Design2.jpg",
-  "/Initial_Design3.jpg",
-  "/Initial_Design4.jpg",
+  "/Photos/winnie/Initial_Design1.jpg",
+  "/Photos/winnie/Initial_Design2.jpg",
+  "/Photos/winnie/Initial_Design3.jpg",
+  "/Photos/winnie/Initial_Design4.jpg",
 ]).current;
 
 const [imgIndex, setImgIndex] = useState(0);
@@ -181,7 +181,7 @@ useEffect(() => {
           <div className="flex flex-col md:flex-row gap-20">
             <div className="md:w-2/5 space-y-12">
               <div className="relative overflow-hidden group border border-outline-variant/30 rounded-xl inline-block w full">
-              <img alt="Final Prototype"className="w-full h-auto brightness-90 group-hover:brightness-100 transition-all duration-500"src="/Winnie_Final.jpg"/>
+              <img alt="Final Prototype"className="w-full h-auto brightness-90 group-hover:brightness-100 transition-all duration-500"src="/Photos/Winnie_Final.jpg"/>
                 <div className="absolute bottom-6 left-6 bg-background/90 backdrop-blur-md px-6 py-4 border border-outline-variant/30 rounded-lg">
                   <p className="text-[10px] font-bold uppercase tracking-[0.2em]">Final Prototype</p>
                 </div>
@@ -192,7 +192,7 @@ useEffect(() => {
       <img
         alt="Winnie Presentation 1"
         className="w-full min-h-[520px] object-cover transition-all duration-700 hover:scale-105"
-        src="/winne_presentation_1.jpg"
+        src="/Photos/winne_presentation_1.jpg"
       />
     </div>
 
@@ -200,7 +200,7 @@ useEffect(() => {
       <img
         alt="Winnie Presentation 2"
         className="w-full min-h-[520px] object-cover transition-all duration-700 hover:scale-105"
-        src="/winne_presentation_2.jpg"
+        src="/Photos/winne_presentation_2.jpg"
       />
     </div>
   </div>
@@ -278,7 +278,7 @@ useEffect(() => {
             </div>
             <div className="flex-[1.5] w-full h-[500px] md:h-[650px] bg-surface-container-high rounded-xl overflow-hidden relative group">
               <img
-                src="/Smart_Energy.jpeg"
+                src="/Photos/Smart_Energy.jpeg"
                 alt="Smart Energy Monitor"
                 className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
               />
@@ -336,7 +336,7 @@ useEffect(() => {
               </div>
               <div className="md:w-1/2 relative h-64 md:h-auto overflow-hidden">
                 <img
-                src="/Smart_PCB.jpeg"
+                src="/Photos/Smart_PCB.jpeg"
                 alt="Smart Energy Monitor"
                 className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
               />
@@ -379,7 +379,7 @@ useEffect(() => {
               {/* IMAGE */}
               <div className="bg-surface-container-high rounded-xl border border-outline-variant/10 overflow-hidden group h-[450px] md:h-[600px] relative">
                 <img
-                  src="/Actual_SEM.jpg"
+                  src="/Photos/Actual_SEM.jpg"
                   alt="Smart Energy Monitor"
                   className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
                 />
