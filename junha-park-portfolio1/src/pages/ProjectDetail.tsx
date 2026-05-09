@@ -147,6 +147,7 @@ useEffect(() => {
     />
   ))}
 
+
   </div>
 </div>
           </div>
@@ -275,9 +276,12 @@ useEffect(() => {
                 ))}
               </div>
             </div>
-            <div className="flex-1 w-full aspect-video bg-surface-container-high rounded-xl overflow-hidden relative group">
-              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB51jfC8UujvMU452NQ8J1FTYkxwd9ZKbniVCaMofJl1pWsbOiPyAxWDf4lLwBrmvLWUadcp0zYWM21IkTB1lA0bm9aYk0M-PEZYq6CKUSiYA31xvDu0GVq9iiIOvXerNvJ10B0zopVxIq1JT0FY5tFNLWnNdKXrs8h7r36iw9lyRivXucg8OvJFqehf1SmPc87cs1qVoEofPEpZIVf5zp4b2cALuk7S2yC8ykEagE8Q9c2ZmL3hlpn0uGjFRcLo6g6aNaW4CEM-SE"
-                alt="Smart Energy Monitor" className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" />
+            <div className="flex-[1.5] w-full h-[500px] md:h-[650px] bg-surface-container-high rounded-xl overflow-hidden relative group">
+              <img
+                src="/Smart_Energy.jpeg"
+                alt="Smart Energy Monitor"
+                className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60"></div>
             </div>
           </div>
@@ -331,8 +335,11 @@ useEffect(() => {
                 </div>
               </div>
               <div className="md:w-1/2 relative h-64 md:h-auto overflow-hidden">
-                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSGqBE2Bvdj3-jtKbD-s7zVr98qKHls_0lpTnPLWkh4gmQt9QNsC9ZB9hg6niTuSWE2SrvjGUu3aDuAS_hmEzq1Gq3zmuJhIoATOMZVOJCaq4ei22LzevEGaPwPqLM4eZJ9X66cq8ThfJ7u5V09viapPBZXH1RMrL9JuoGosqY_Y-YhEKzjXDhvktnTOehCIeIZwT2s41bgYO-hYaBxyjiOANDwy8WjYTvMwzjrDqr72nynMOaJpMh_2ocR2ZkOVSCiNbSpnPCdKo"
-                  alt="PCB" className="w-full h-full object-cover transition-transform duration-700" />
+                <img
+                src="/Smart_PCB.jpeg"
+                alt="Smart Energy Monitor"
+                className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
+              />
               </div>
             </div>
             <div className="lg:col-span-4 bg-primary p-10 rounded-xl flex flex-col justify-between">
@@ -367,16 +374,30 @@ useEffect(() => {
             </a>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="lg:col-span-3 bg-surface-container-high rounded-xl p-4 border border-outline-variant/10 aspect-[16/7] relative overflow-hidden group">
-              <div className="absolute inset-0 p-12 flex flex-col justify-end z-10">
-                <div className="bg-black/60 backdrop-blur-md p-6 rounded-lg max-w-md border border-white/10">
-                  <p className="text-primary text-[10px] font-black mb-2 uppercase tracking-[0.2em]">LIVE METRICS</p>
-                  <h4 className="text-2xl font-bold text-white mb-2">Predictive Energy Analytics</h4>
-                  <p className="text-xs text-on-surface-variant leading-relaxed">The dashboard utilizes React and D3.js to render real-time waveforms from the hardware sensor nodes via a WebSocket gateway.</p>
-                </div>
+            <div className="lg:col-span-3 space-y-6">
+
+              {/* IMAGE */}
+              <div className="bg-surface-container-high rounded-xl border border-outline-variant/10 overflow-hidden group h-[450px] md:h-[600px] relative">
+                <img
+                  src="/Actual_SEM.jpg"
+                  alt="Smart Energy Monitor"
+                  className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
+                />
               </div>
-              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHMg5Jx988hOFay9_c8M8HNejLKdemTwufWopkOWz4iJI4TDAalkAKsge2RRvnMa1RHiditiep_B4SUZyB28xVVZahHy_8Gbv6PRY6A7o-IEaha0ZYnH7B6UJhpuq8IZHjs6tqzgAH75GDPN1v9pQ7NiMpG7w99SBZJgUlSQQCUowcR4ncHb0lv251im-7bNouOjNUs5ZF0Bm16mwuAhpwi6avyqmyjYMlkVuJYEmgjvet5M001lvldtHXZdVftcw9EYzAU-4h_mc"
-                alt="Dashboard" className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-[2000ms]" />
+
+              {/* TEXT BELOW */}
+              <div className="bg-black/60 backdrop-blur-md p-6 rounded-lg border border-white/10 max-w-2xl">
+                <p className="text-primary text-[10px] font-black mb-2 uppercase tracking-[0.2em]">
+                  LIVE METRICS
+                </p>
+                <h4 className="text-2xl font-bold text-white mb-2">
+                  Predictive Energy Analytics
+                </h4>
+                <p className="text-xs text-on-surface-variant leading-relaxed">
+                  The dashboard utilizes React and D3.js to render real-time waveforms from the hardware sensor nodes via a WebSocket gateway.
+                </p>
+              </div>
+
             </div>
             <div className="lg:col-span-1 bg-surface-container rounded-xl flex flex-col p-8 h-full border border-outline-variant/20">
               <div className="mb-8">
@@ -415,11 +436,11 @@ useEffect(() => {
   // ─────────────────────────────────────────────
   function RoastworksDetail() {
     const gridImages = [
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuCE5rwGS2hToQtb1D83jL2cVmhVLVzZcwhV30mC7LaiU8nvlXNaizLWIUvEdKQExhuaaRzjF3tczgMCMbVho3Afv_uHupOnUuXxj-Ioz7X3ej8Cw99th5E6aJgEn8upu0acp-H0d7KykLBaii4TEnUroGGCpY_wuhLb9UAF5Vz1cDW6Du0HCoZIL95ZmlOMOm1ZeQUV0F4U4BC5vXmBWq4Nc9pgbY_dedyjsQUtyfg4OcYdA0Esa11-MjddcS8jrlDhPVRpjsy6nOs',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuBv4rR_yYFS23Xp123w06MyiT7wtUDrykmTvPzU4J_cGOoXP9zQOXxqD6A-PjuSJ0WtAuSO84Tp8CvmI0_cV7N76uELvBY7Nim9zhI1SweG2yLW1Y9iKx7kAI1Fk4TM3difFKAzPjfpupfwqy8ut4zobU_oGXplJUPm8Xq5LMFai1DeqLZgbSirXjf9VEzReXgiFXGWE17df6UcRmcXGszMbfbz2yxkVjNDu1mOGmuNRrthygh-5K3PHdVEPdt76NxPyqNIYsCzsCI',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuC9X4Ow6DmKWp-c1zzTIW-D_5uH8498OeZFeLu1vS1YuZ8WGaKllRFLuCrr53EuFD-UYf6AebmlWllOn6FSHuYcsh-1f3tWgOqKk8nu75H-3tzc1xtrnB3MLvo8gOOMnKE_5cSRQc5mDPzRFHAOgUjVUJyolmRb5uMnL45qtkBCaU2grnAWT8N9YYBaHgeXw5j_NJC5lSpxFC4IYx1vXwJZdtyvpvBoz_7_LGhiZnQRtw5aw5JnFjWKrUcq88dm6XopnafvZrzJXfg',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuClclxJ8p3zYAIS2ME6F43bNj_6gKjPfZIS_FTlitOqfr27m9BH8ZZGmshdsUBJyHNxAZF6FkmcLDJ4QtBb630ivOcA163Z_69ygHZRQYGpgEzm7zKo-4kWxJewyh9UFnAxXlH-PmPhDEj8v3aXtU-KaaX9khlMhCsjMRMM8dmmQFFswaUaFZnReDcYifVn8nXbC8RTrwG_fxvDVf2yYeKB1Uc2Cff907T-l_5YAssbFU9-cnVxN3892xSosMeQPozwcf68igtihGQ',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuDTbnHOPaKoK3I_yv09GwxBXapEP_D-_6TH0fTQBVu2qFE5ry2ZKiS4AXP0LAsnbO5tn_KwuUuCsezCktIlg0ZsmCzyM6NF6bz782M5s9grbaJwn9WoTBLfqoET9aft8kVJhOP2VG6X8NL43U0A_b6S1z8LNU9sPKH1sth961eioo8JjZg1paGFStPCsgzD7ASMVHlpHgEdQaNeAVzuUOIB6vAYxrGEzxNyRYNEc1QYWdIA_pcmTw8hhrbh2o4I_9T0YnW0W5rBWmE',
+      '/Home.png',
+      '/Sales.png',
+      '/Business.png',
+      '/Forecast.png',
+      '/ForecastC.png',
     ];
 
     return (
@@ -586,7 +607,7 @@ useEffect(() => {
               <motion.span initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.2 }}
                 className="text-primary text-xs font-bold uppercase tracking-[0.3em] mb-4 block">
                 Case Study: Android Engineering{' '}
-                <span className="ml-4 inline-flex items-center gap-2 border border-outline-variant/30 px-2 py-0.5 rounded-full text-[9px] text-on-surface/60">WORK IN PROGRESS</span>
+                <span className="ml-4 inline-flex items-center gap-2 border border-outline-variant/30 px-2 py-0.5 rounded-full text-[12px] text-on-surface/60">WORK IN PROGRESS</span>
               </motion.span>
               <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}
                 className="text-5xl md:text-7xl font-bold text-on-surface mb-8 tracking-tighter">
@@ -597,7 +618,7 @@ useEffect(() => {
                 Developing a robust, high-performance search engine and navigation framework for complex Android ecosystems, leveraging Breadth-First Search (BFS) for optimal path discovery.
               </motion.p>
               <div className="flex flex-wrap gap-4">
-                {['ANDROID SDK', 'JAVA', 'ALGORITHMS'].map((tag, i) => (
+                {['ANDROID XML', 'JAVA'].map((tag, i) => (
                   <div key={tag} className="px-4 py-2 border border-outline-variant bg-surface-container rounded-full flex items-center gap-2">
                     <div className={`w-1.5 h-1.5 rounded-full ${i === 0 ? 'bg-primary' : 'bg-tertiary'}`}></div>
                     <span className="text-[10px] font-black text-on-surface tracking-widest">{tag}</span>
