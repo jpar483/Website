@@ -17,7 +17,7 @@ const projects = [
     title: 'Winnie the Boht',
     date: 'AUG 2025',
     description: 'Interactive embedded robot featuring servo control, AI-driven face and speech detection, and custom 3D printed components.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCYetbqEZxrgSbhED0eufX6qPVIedWGEuW38J8GX2nbtPar6UIx29Hu8r4YpMBCqwNUF1Wh_uME3VWYkT8mQRKunxdt9WxpkoWTqBGNYbvlsw5VwHZSD5q2802ek_EBoduySg9yzUAUb5ufU2vMlqNYxpgyZRAXV7QkNmDKEeALw3C9zLu6xjrB6wjyNDB_J2DKLrlSdVFqe-JykmJERNgvIPPB6PJYz6wRw-7eMD4N-S9VKlgRUAyovk-_3YQ5Q455skNgrTMaGf4',
+    image: 'IMG_0698.jpg',
     size: 'large',
     githubUrl: 'https://github.com/jpar483'
   },
@@ -154,7 +154,7 @@ function ProjectCard({ title, date, description, image, size, tag, id, githubUrl
         <div className={`relative overflow-hidden border border-outline-variant/20 rounded-xl bg-surface-container-lowest mb-6 aspect-video ${isLarge ? 'md:aspect-[16/9]' : 'md:aspect-[4/5]'}`}>
           <img 
             alt={title} 
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100 grayscale group-hover:grayscale-0" 
+            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100" 
             src={image} 
           />
           <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
