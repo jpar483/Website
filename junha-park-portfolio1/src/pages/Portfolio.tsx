@@ -19,7 +19,7 @@ const projects = [
     description: 'Interactive embedded robot featuring servo control, AI-driven face and speech detection, and custom 3D printed components.',
     image: '/Photos/IMG_0698.jpg',
     size: 'large',
-    githubUrl: 'https://github.com/jpar483'
+    githubUrl: 'https://www.linkedin.com/feed/update/urn:li:activity:7446354045402996736/'
   },
   {
     id: 'smart-energy-monitor',
@@ -33,7 +33,7 @@ const projects = [
   {
     id: 'roastworks',
     title: 'RoastWorks Dashboards',
-    date: 'AUG 2025',
+    date: 'APRIL 2026',
     description: 'Python + PyQt6 automation suite featuring forecasting models and integrated AI chatbot functionality.',
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB8qi1I4wJrlVKg_mc7-btvZKLz-5T4-79GETRmhOYizbwV4XxEKhd6ph3OO5iVXH4xyVD68cIV_YNExjLf_jV65L82rICT_4m3cTwYyBzjrAq5Ho_SUjTXu9jS3q_4qXrsGZxQoWhMbyttGY4FPpI_RXvunBmHmTBVQN0fxzr224w6JVmaEr8HdUM57V9-g2SffmS9Qw9QXdvTmku-ppQkw8aDxldZqZT7TchgLq8oZUDommLcT0Igt4O5vbLaGnfXjRY3EppxvcM',
     size: 'medium',
@@ -42,8 +42,8 @@ const projects = [
   {
     id: 'java-nav',
     title: 'Java Navigation & Search',
-    date: '2024 - 2026',
-    tag: 'WIP',
+    date: 'MAY 2026 - Present',
+    tag: 'WORK IN PROGRESS',
     description: 'Android application development utilizing XML for UI and implementing BFS algorithms for optimized path finding.',
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD_Q5_aPYCnFl2KC_X9ZwTxusiKSgHEAonOsXdUcWJnJevs6qDLWph_uNktw6kC0enVaERBODK0_So3JxLBMR6kNoAFgzhz18Osemi1baw95aE0za3cm551VVwOGoVNElTikyWbQ1d6vYqMnVqZfUVUDwSHJw8RzjR3EeoKXH1u407tHWlOosKsCcVMfdOYupTNiWp0pPt2y7Ap_X2qvXG-adtjr1oWF8GiS4e0NqComQxEliIr8oQYt4jk_b63VE5gDNAFpZeH8rE',
     size: 'medium',
@@ -158,7 +158,7 @@ function ProjectCard({ title, date, description, image, size, tag, id, githubUrl
             src={image} 
           />
           <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
-            <span className="px-8 py-3 bg-primary text-on-primary text-[10px] font-bold uppercase tracking-widest rounded-lg">View Case Study</span>
+            <span className="px-8 py-3 bg-primary text-on-primary text-[10px] font-bold uppercase tracking-widest rounded-lg">View</span>
           </div>
         </div>
         <div>
@@ -174,7 +174,7 @@ function ProjectCard({ title, date, description, image, size, tag, id, githubUrl
       {/* Button row — outside Link so the GitHub icon doesn't trigger case study navigation */}
       <div className="mt-8 flex items-center gap-4">
         <Link to={`/portfolio/${id}`}>
-          <button className="px-6 py-2.5 bg-primary text-on-primary text-[10px] font-bold rounded-lg hover:brightness-110 transition-colors uppercase tracking-[0.2em]">View Case Study</button>
+          <button className="px-6 py-2.5 bg-primary text-on-primary text-[10px] font-bold rounded-lg hover:brightness-110 transition-colors uppercase tracking-[0.2em]">View</button>
         </Link>
         {githubUrl && (
           <a

@@ -48,33 +48,33 @@
       image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD5mjRqGqO3jLts_wczTgRKL0dHNveNvISpl3e5-i-0wu58rhdLoS7rgW37JyyOhiqV1Y52J-NqHl4xzvZRTy8l_tBP5j28B9TwqOikJzJy5HqRVcTTllbA95QFrXEpKLnf6T8VN6XugDGt0R8pbhisRR9wF3TAwi4f7eeTQZuvWzQwOXT9VnAWeoIISRXe-pPwoEFHVdF7Vv14dnU3ejFmQRnOoxoMma9OU-GbXnsEpPvgrbCzFfbmfNWPKFPu6PT-BUXuJRDUx7s'
     },
     specs: [
-      { label: 'Processor', value: 'NVIDIA Jetson Nano + Dual ESP32' },
-      { label: 'Actuation', value: '18x Digital High-Torque Servos' },
+      { label: 'Processor', value: ' Jetson Nano + ATmega328P' },
+      { label: 'Actuation', value: '3x Positional Rotation Servo' },
       { label: 'Vision', value: '4K Stereo Depth Camera Module' },
-      { label: 'Runtime', value: 'LiFePO4 4-Cell System (4hrs active)' }
+      { label: 'Fabrication', value: '3D printed skeleton with soft toy outer layer' }
     ],
     features: [
       {
         title: 'Embedded Logic',
-        description: 'Development of custom firmware for ESP32 and ARM-based controllers to manage high-frequency PWM signals for precise servo positioning.',
-        tags: ['RTOS', 'C++', 'I2C BUS'],
+        description: 'Development of custom firmware for ATmega328P and ARM-based controllers to manage high-frequency PWM signals for precise servo positioning.',
+        tags: ['ARDUINO NANO', 'C','ATmega328P', 'Servos'],
       },
       {
-        title: 'AI Perception',
-        description: 'Implementation of OpenCV and MediaPipe pipelines for real-time facial tracking and gesture recognition with <30ms latency.',
-        tags: ['TENSORFLOW', 'OPENCV', 'PYTHON'],
+        title: 'AI INTEGRATION',
+        description: 'Implementation of OpenAI using CHATGPT and for real-time interview style interaction and conversational memory ',
+        tags: ['CHATGPT','OPENAI', 'PYTHON' , 'LLM'],
       },
       {
-        title: 'Natural Audio',
+        title: 'DETECTION',
         description: 'Integration of offline speech-to-text models and dynamic text-to-speech synthesis for fluid vocal interactions.',
-        tags: ['STT', 'NLP', 'WAV2VEC'],
+        tags: ['VOICE DETECTION', 'FACE RECOGNITION', 'SPEAKER'],
       }
     ],
     gallery: [
       'https://lh3.googleusercontent.com/aida-public/AB6AXuAFGeImgrt0jtIbeFyB6hWqu6Dkr9pz5ter55q7WCikD4asixLpCRIAjT3WOPEF4q7BODVBvOwruWfDgy-nOJ1OrJuRJF6pjjopt4CggrzNp0pTVwtkRLUByEJqYTzP6IWVszLlXFKlCTD0nQ_0Mr9kObssp2PSFwnpWQ-26qDp8DnLnBYkbvvszPe8Rw01snHMes_GEOR1wWjA_eEsxksWaXqebXfC5kBTC-YEmhqf2G5hvd-rT8BnXb6VvLLS5qWKC-jv7Bs84hg',
       'https://lh3.googleusercontent.com/aida-public/AB6AXuDsf_Yqvnh8MfuN0aZ7mKxgwAmBfD0nlB1xwqJey-M2eaoHCRksA-N_ZCs1_L5RBEzrHKhqx5KzEhQmS1JhEqvhs2kvg8pIeMzApnoR04tCn6jJfTv7dYrl7M-Deu4L5qSY5UEhEtm7PAPi7vyP1iACpA68Wdw2-nljXH8aN7uwRsXSj_4tIhZnlaixbzA4DDfS_e8OdpafPZN2Ijb2N1WMQQz6PqRkp6P9cBIz8jZAaFf4y93KIMw1C6tv-wvES6_k3Wu_36h7bPA'
     ],
-    quote: "Winnie the Boht represents the pinnacle of my current research into collaborative robotics and intuitive human-machine interfaces."
+    quote: "Winnie the Boht project was a very exciting experience. It was my first time working on a project that combined both electrical and software engineering to this extent. From a 3D printed skeleton to implementing speech detection was a very meaningful experience."
   };
 
   function WinnieDetail() {
@@ -108,7 +108,7 @@ useEffect(() => {
               {project.description}
             </p>
             <div className="flex gap-4 mt-8">
-              <a href="https://github.com/jpar483" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 border border-outline/30 px-8 py-4 text-[10px] font-bold hover:bg-on-surface hover:text-background transition-all uppercase tracking-widest">
+              <a href="https://github.com/tyor819/ECSE-design-comp" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 border border-outline/30 px-8 py-4 text-[10px] font-bold hover:bg-on-surface hover:text-background transition-all uppercase tracking-widest">
                 <Code size={16} />
                 VIEW REPOSITORY
               </a>
