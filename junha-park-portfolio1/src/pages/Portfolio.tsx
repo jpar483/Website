@@ -28,7 +28,7 @@ const projects = [
     description: 'End-to-end PCB design with ATmega architecture, C firmware development, and usage visualization.',
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDePhH5KYC7kQXTt9cnf421vsgCQlrl9NYhza4-HBnT1-qsI-y9BJFwOy-APJmQQHb1P3wJF061SO9tA9wDBHoSWvPmrlR7nc6_Lbv56FuxA2ti0rf8_mj5LWuyim-pmrnuOH_LR0fC_c6KwbXIh2GOdSgk98GV07uv9e5AUK2cMI_nB4pcyGAEgVYG3JOtSzhX9iE4gbd8w5p0lefRu1ra5rhLPq8KDhB7ZwlgzoVMPBVGUcCq7hXs6qJFxW7vwbLA33xNvuj0E2w',
     size: 'small',
-    githubUrl: 'https://github.com/jpar483'
+    githubUrl: 'https://github.com/uoa-ece209-2025/ec209-2025-project-2025_team_41'
   },
   {
     id: 'roastworks',

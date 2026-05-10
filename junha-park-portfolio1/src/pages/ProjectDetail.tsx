@@ -265,7 +265,7 @@ useEffect(() => {
               </motion.h1>
               <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }}
                 className="text-xl text-on-surface-variant max-w-2xl mb-12 leading-relaxed">
-                An end-to-end industrial IoT solution designed to combat residential and commercial energy wastage through real-time ATmega-based monitoring and predictive load analysis.
+                An ATmega based embedded system combined with a seven segment display, visualising various energy compoenents in real time.
               </motion.p>
               <div className="flex flex-wrap gap-4">
                 {['HARDWARE DESIGN', 'EMBEDDED SYSTEMS'].map((tag, i) => (
@@ -293,7 +293,7 @@ useEffect(() => {
           <h2 className="text-4xl font-bold text-on-surface mb-10">Phase 1: Identification & Prototyping</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
             <div>
-              <h3 className="text-2xl font-bold text-primary mb-4">The Challenge</h3>
+              <h3 className="text-2xl font-bold text-primary mb-4">First Steps</h3>
               <p className="text-on-surface-variant leading-relaxed">Global energy prices are rising, yet 30% of energy consumed in commercial buildings is wasted. The project aimed to create a non-invasive current sensing device capable of identifying phantom loads and inefficient duty cycles in legacy machinery.</p>
             </div>
             <div>
@@ -326,10 +326,10 @@ useEffect(() => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             <div className="lg:col-span-8 bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 flex flex-col md:flex-row">
               <div className="p-10 md:w-1/2 flex flex-col justify-center">
-                <h3 className="text-3xl font-bold text-on-surface mb-4">Advanced PCB Layout</h3>
-                <p className="text-on-surface-variant mb-8 leading-relaxed">Implementing a 4-layer stackup to isolate high-frequency switching noise from the sensitive analog measurement stage. Integrated EMI shielding and ground planes ensure signal integrity in industrial environments.</p>
+                <h3 className="text-3xl font-bold text-on-surface mb-4">PCB Layout</h3>
+                <p className="text-on-surface-variant mb-8 leading-relaxed">Implementing a 2-layer stackup to isolate high-frequency switching noise from the sensitive analog measurement stage. Integrated EMI shielding and ground planes ensure signal integrity in industrial environments.</p>
                 <div className="flex flex-wrap gap-2">
-                  {['ALTIUM DESIGNER', '4-LAYER STACK', 'SMD COMPONENTS'].map(t => (
+                  {['ALTIUM DESIGNER', '2-LAYER STACK'].map(t => (
                     <span key={t} className="bg-surface-container-highest px-3 py-1 rounded text-[10px] font-black tracking-wider uppercase">{t}</span>
                   ))}
                 </div>
@@ -345,11 +345,11 @@ useEffect(() => {
             <div className="lg:col-span-4 bg-primary p-10 rounded-xl flex flex-col justify-between">
               <div className="space-y-4">
                 <h3 className="text-3xl font-bold text-on-primary">Firmware & Logic</h3>
-                <p className="text-on-primary/80 leading-relaxed font-medium">Custom C++ firmware optimized for bare-metal performance. Simulated in LTspice for transient response and Proteus for logic verification.</p>
+                <p className="text-on-primary/80 leading-relaxed font-medium">Custom C++ firmware optimized for bare-metal performance. Simulated in LTspice and Proteus for transient response and Proteus for logic verification.</p>
               </div>
               <div className="mt-8 border-t border-on-primary/20 pt-8">
                 <ul className="space-y-4">
-                  {['INTERRUPT DRIVEN ADC', 'UART DEBUGGING LAYER', 'EEPROM DATA LOGGING'].map(point => (
+                  {['INTERRUPT DRIVEN ADC', 'USART' , 'SIGNAL CONDITIONING', 'RC FILTER' , 'HALFWAVE RECTIFIER AND REGULATOR'].map(point => (
                     <li key={point} className="flex items-center gap-3 text-[10px] font-black tracking-[0.2em] text-on-primary uppercase">
                       <CheckCircle2 size={16} /> {point}
                     </li>
@@ -367,7 +367,7 @@ useEffect(() => {
               <span className="text-primary text-[10px] font-black uppercase tracking-widest mb-2 block">The Final Dashboard</span>
               <h2 className="text-5xl font-bold text-on-surface">Visualizing consumption in real-time via a responsive UI.</h2>
             </div>
-            <a href="https://github.com/jpar483" target="_blank" rel="noopener noreferrer"
+            <a href="https://github.com/uoa-ece209-2025/ec209-2025-project-2025_team_41" target="_blank" rel="noopener noreferrer"
               className="flex items-center gap-2 bg-on-surface text-surface px-8 py-4 rounded font-bold uppercase tracking-tight hover:bg-primary transition-all group shrink-0">
               <Terminal size={20} className="group-hover:rotate-12 transition-transform" />
               <span>View on GitHub</span>
@@ -402,17 +402,22 @@ useEffect(() => {
             <div className="lg:col-span-1 bg-surface-container rounded-xl flex flex-col p-8 h-full border border-outline-variant/20">
               <div className="mb-8">
                 <h4 className="text-primary text-[10px] font-black mb-1 uppercase tracking-widest">HARDWARE SPECS</h4>
-                <p className="text-lg font-bold text-on-surface">Custom FR4 Enclosure</p>
+                <p className="text-lg font-bold text-on-surface">Custom ThroughHole FR4 PCB</p>
               </div>
               <div className="aspect-square bg-surface-container-low rounded-lg overflow-hidden mb-8">
                 <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4EczrXkWlVpCcXb6VbclDjO8Z6OaHMAtkFKMHtaUAmrsbRUreryY8kUhNX-l2YomKcPqlGd5wtFgOvBQCZSh4r0vfmF0D2JZrPQqaD9napiC_HOGa5M_EkDmUZgDF-eymRJrmUZWCZjDgAOtZqHylcPjEl5zvR_0XOa76gMwFzP_bTcEJZMbAQ1OjtoXGppePMZMXWnTCs8kcTZMWRZ-7PI0VW3oSA_hBmSD_yppotCh9mtyl5gkfYHsIiSb9dRcxGKfxEpcr-YU"
                   alt="Enclosure" className="w-full h-full object-cover" />
               </div>
               <div className="space-y-6 mt-auto">
-                {[{ label: 'LAYER COUNT', value: '4-LAYER' }, { label: 'VOLTAGE RANGE', value: '90-260V AC' }].map(spec => (
-                  <div key={spec.label} className="flex justify-between items-center text-[10px] border-t border-outline-variant/20 pt-4">
-                    <span className="font-black text-outline uppercase tracking-widest">{spec.label}</span>
-                    <span className="font-black text-on-surface uppercase tracking-widest">{spec.value}</span>
+                {[{ label: 'LAYER COUNT', value: '2-LAYER' }, 
+                { label: 'VOLTAGE RANGE', value: '3.1-5V AC' },
+                { label: 'Resistors', value: 'Film' },
+                { label: 'Capacitor', value: 'Electrolytic + Ceramic' },
+                { label: 'Diode', value: 'Standard + Zenor' }
+              ].map(spec => (
+                  <div key={spec.label} className="flex justify-between items-center gap-4 text-[10px] border-t border-outline-variant/20 pt-4">
+                    <span className="font-black text-outline uppercase tracking-widest shrink-0">{spec.label}</span>
+                    <span className="font-black text-on-surface uppercase tracking-widesttext-right whitespace-nowrap">{spec.value}</span>
                   </div>
                 ))}
               </div>
