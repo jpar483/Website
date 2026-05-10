@@ -441,11 +441,11 @@ useEffect(() => {
   // ─────────────────────────────────────────────
   function RoastworksDetail() {
     const gridImages = [
-      '/Home.png',
-      '/Sales.png',
-      '/Business.png',
-      '/Forecast.png',
-      '/ForecastC.png',
+      '/Photos/Home.png',
+      '/Photos/Sales.png',
+      '/Photos/Business.png',
+      '/Photos/Forecast.png',
+      '/Photos/ForecastC.png',
     ];
 
     return (
@@ -489,10 +489,10 @@ useEffect(() => {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
             <div className="md:col-span-5 space-y-8">
               <p className="text-lg text-on-surface-variant leading-relaxed">
-                The initial objective was to eliminate manual bottlenecks in artisanal coffee shop workflows. High-growth roasteries were struggling with inventory lag and reactive ordering models that led to significant waste.
+                The initial objective was to eliminate manual excel data analysis for a typical coffee business. Manual data analysis is prone to human error and extremely time consuming.
               </p>
               <div className="space-y-4">
-                {[{ icon: BarChart3, label: '40% Waste Reduction Target' }, { icon: History, label: 'Predictive Forecasting Model' }].map(stat => (
+                {[{ icon: BarChart3, label: 'Improve time efficiency and user friendliness' }, { icon: History, label: 'Predictive Forecasting Model' }].map(stat => (
                   <div key={stat.label} className="flex items-center gap-3">
                     <stat.icon size={20} className="text-primary" />
                     <span className="text-on-surface font-medium">{stat.label}</span>
@@ -519,18 +519,18 @@ useEffect(() => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-20 max-w-7xl mx-auto">
               <div className="space-y-12">
                 <p className="text-xl text-on-surface-variant leading-relaxed">
-                  Building the core engine required a robust desktop architecture. We utilized PyQt6 for the GUI to ensure enterprise-grade responsiveness, while the backend leveraged Python's analytical libraries for real-time forecasting.
+                  Building the core engine required a robust desktop architecture. We utilized PyQt6 for the GUI to ensure enterprise-grade responsiveness, while the backend leveraged Python's analytical libraries for real-time forecasting and data analysis.
                 </p>
                 <div className="space-y-8">
                   <div className="p-8 bg-surface-container rounded-xl border border-outline-variant/20 flex flex-col gap-2">
                     <span className="text-primary text-[10px] font-black uppercase tracking-widest">IMPLEMENTATION</span>
                     <h3 className="text-2xl font-bold">Forecasting Models</h3>
-                    <p className="text-on-surface-variant">Time-series analysis using seasonal decomposition to predict demand spikes during holiday cycles and urban events.</p>
+                    <p className="text-on-surface-variant">Time-series analysis using multiple forecasting models including ARIMA, Linear Regression, Polynomial Regression, and Random Forest. Seasonal decomposition is applied to capture patterns and improve prediction of demand spikes during holiday cycles and urban events.</p>
                   </div>
                   <div className="p-8 bg-surface-container rounded-xl border border-outline-variant/20 flex flex-col gap-2">
                     <span className="text-primary text-[10px] font-black uppercase tracking-widest">INTEGRATION</span>
                     <h3 className="text-2xl font-bold">AI Chatbot Interface</h3>
-                    <p className="text-on-surface-variant">A natural language processing layer that allows shop managers to query inventory health and sales trends via simple text commands.</p>
+                    <p className="text-on-surface-variant">Using Ollama3 an interactive chatbot that provided additional data analysis beyond visible features was implemented. Users can interact using natural language for user friendliness as well as having the chatbot be moveable to any location on the screen further improves user interaction.</p>
                   </div>
                 </div>
               </div>
@@ -557,9 +557,9 @@ useEffect(() => {
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
             <div>
               <span className="text-primary text-[10px] font-black uppercase tracking-widest mb-2 block">The Final Outcome</span>
-              <h2 className="text-5xl font-bold text-on-surface">RoastWorks V1.0 Dashboard</h2>
+              <h2 className="text-5xl font-bold text-on-surface">RoastWorks Dashboard</h2>
             </div>
-            <a href="https://github.com/jpar483" target="_blank" rel="noopener noreferrer"
+            <a href="https://github.com/COMPSYS302/project-python-team-4" target="_blank" rel="noopener noreferrer"
               className="flex items-center gap-2 bg-on-surface text-surface px-8 py-4 rounded font-bold uppercase tracking-tight hover:bg-primary transition-all group shrink-0">
               <Terminal size={20} className="group-hover:rotate-12 transition-transform" />
               <span>View on GitHub</span>

@@ -37,7 +37,7 @@ const projects = [
     description: 'Python + PyQt6 automation suite featuring forecasting models and integrated AI chatbot functionality.',
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB8qi1I4wJrlVKg_mc7-btvZKLz-5T4-79GETRmhOYizbwV4XxEKhd6ph3OO5iVXH4xyVD68cIV_YNExjLf_jV65L82rICT_4m3cTwYyBzjrAq5Ho_SUjTXu9jS3q_4qXrsGZxQoWhMbyttGY4FPpI_RXvunBmHmTBVQN0fxzr224w6JVmaEr8HdUM57V9-g2SffmS9Qw9QXdvTmku-ppQkw8aDxldZqZT7TchgLq8oZUDommLcT0Igt4O5vbLaGnfXjRY3EppxvcM',
     size: 'medium',
-    githubUrl: 'https://github.com/jpar483'
+    githubUrl: 'https://github.com/jpar483https://github.com/COMPSYS302/project-python-team-4'
   },
   {
     id: 'java-nav',
